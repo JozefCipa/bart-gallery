@@ -16,7 +16,7 @@ class PictureCategory
 	function __construct($categoryName)
 	{
 		$this->categoryName = strtolower($categoryName);
-		$this->categoryPath = env("GALLERY") . $categoryName;
+		$this->categoryPath = env("GALLERY") . $this->categoryName;
 
 		if (!file_exists($this->categoryPath)) {
 			throw new Exception("Category $this->categoryName doesn't exist !");
