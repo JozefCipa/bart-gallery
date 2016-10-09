@@ -7,7 +7,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 spl_autoload_register(function ($className) {
-	require env("WEB_DIR") . "/classes/$className.php";
+	require env("WEB_DIR") . "classes/$className.php";
 });
 
 $properties = [
