@@ -26,6 +26,7 @@ let application = {
  * Load categories on startup and load first category
  */
 function loadInitData() {
+
 	$.ajax({
 		url     : Constants.API.GET_CATEGORIES,
 		success : (res) => {
@@ -33,6 +34,9 @@ function loadInitData() {
 
 			//mark first category as active
 			application.categories[0].isActive = true;
+		},	
+		error: (err) => {
+			console.log('ERROR: ', err.responseText);
 		},
 		complete: () => {
 			loadCategory(application.categories[0].name);
@@ -75,6 +79,9 @@ function loadCategory(category) {
 					cat.isActive = true;
 			});
 
+		},	
+		error: (err) => {
+			console.log('ERROR: ', err.responseText);
 		},
 		complete: () => {
 			PicturesStore.emitChange();
@@ -130,6 +137,9 @@ function loadMoreThumbs(newCurrentIndex, emitChange = true, callback = null) {
 			});
 
 			application.currentCategory.thumbs[newCurrentIndex].isCurrent = true;
+		},	
+		error: (err) => {
+			console.log('ERROR: ', err.responseText);
 		},
 		complete: () => {
 
@@ -169,6 +179,9 @@ function uploadPicture(picture, category) {
 
 			// when picture is uploaded, switch to its category
 			loadCategory(category);
+		},	
+		error: (err) => {
+			console.log('ERROR: ', err.responseText);
 		}
 	});
 

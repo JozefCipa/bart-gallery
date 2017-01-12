@@ -22,11 +22,11 @@ const Constants = {
 	},
 
 	API: {
-		GET_CATEGORY    : "http://localhost:8080/bart.sk.fotogaleria/api/pictures-category/", // /:picturesCategory
-		GET_MORE_THUMBS : "http://localhost:8080/bart.sk.fotogaleria/api/thumbs/", // /:picturesCategory/:count
-		GET_MAIN_PICTURE: "http://localhost:8080/bart.sk.fotogaleria/api/main-picture/", //:thumb
-		UPLOAD          : "http://localhost:8080/bart.sk.fotogaleria/api/upload/",
-		GET_CATEGORIES  : "http://localhost:8080/bart.sk.fotogaleria/api/load-categories/"
+		GET_CATEGORY    : "http://localhost/bart-gallery/api/pictures-category/", // /:picturesCategory
+		GET_MORE_THUMBS : "http://localhost/bart-gallery/api/thumbs/", // /:picturesCategory/:count
+		GET_MAIN_PICTURE: "http://localhost/bart-gallery/api/main-picture/", //:thumb
+		UPLOAD          : "http://localhost/bart-gallery/api/upload/",
+		GET_CATEGORIES  : "http://localhost/bart-gallery/api/load-categories/"
 	},
 
 	NEXT_PICTURE    : "next-image",

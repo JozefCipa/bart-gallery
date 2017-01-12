@@ -11,7 +11,7 @@ spl_autoload_register(function ($className) {
 });
 
 $properties = [
-	"BASE_URL"        => "http://localhost:8080/bart.sk.fotogaleria",
+	"BASE_URL"        => "http://localhost/bart-gallery",
 	"WEB_DIR"         => "./web/",
 	"GALLERY"         => "./public/gallery/",
 	"THUMB_DIMENSIONS" => [
@@ -24,7 +24,7 @@ $properties = [
 		"<rss version=\"2.0\">
 <channel>
 <title>Galeria</title>
-<link>http://localhost:8080/bart.sk.fotogaleria/public/</link>
+<link>http://localhost/bart-gallery/public/</link>
 <description>View your pictures in a web gallery</description>
 <language>sk-SK</language>
 <pubDate></pubDate>

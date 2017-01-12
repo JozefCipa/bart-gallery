@@ -1,7 +1,7 @@
 Options -Indexes
 RewriteEngine On
 
-RewriteBase /public
+RewriteBase /bart-gallery
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

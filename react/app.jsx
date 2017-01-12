@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import $ from 'jquery';
 import PicturesStore from './stores/PicturesStore';
 import Actions from './actions/Actions';
@@ -26,7 +26,7 @@ function afterRender(){
 }
 
 PicturesStore.addChangeListener(() => {
-	ReactDOM.render(
+	render(
 		<MainPicture />,
 		document.getElementById("main-picture"),
 		() => {
@@ -35,7 +35,7 @@ PicturesStore.addChangeListener(() => {
 		}
 	);
 
-	ReactDOM.render(
+	render(
 		<CategoryHeader />,
 		document.getElementById("category-header"),
 		() => {
@@ -44,7 +44,7 @@ PicturesStore.addChangeListener(() => {
 		}
 	);
 
-	ReactDOM.render(
+	render(
 		<PicturesThumbs />,
 		document.getElementById("pictures-thumbs"),
 		() => {
@@ -53,7 +53,7 @@ PicturesStore.addChangeListener(() => {
 		}
 	);
 
-	ReactDOM.render(
+	render(
 		<Menu />,
 		document.getElementById("menu"),
 		() => {

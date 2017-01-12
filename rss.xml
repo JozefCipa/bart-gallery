@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+<title>Galeria</title>
+<link>http://localhost/bart-gallery/public/</link>
+<description>View your pictures in a web gallery</description>
+<language>sk-SK</language>
+<pubDate>Thu, 12 Jan 2017 17:50:18 +0100</pubDate>
+<lastBuildDate>Thu, 12 Jan 2017 17:42:55 +0100</lastBuildDate>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>Weblog Editor 2.0</generator>
+<managingEditor>editor@example.com</managingEditor>
+<webMaster>cipa.jozef@gmail.com</webMaster>
+</rss>
