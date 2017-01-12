@@ -10,6 +10,7 @@ Task: http://pridajsa.bart.sk/ (Slovak only)
 
 1. Clone this repo
 2. You can set your settings in `config.php`, then run `npm install` and also change `react/Constants.js` and rebuild js
+3. Move cloned directory to `bart-gallery`
 4. Make sure you have right directory permissions
 5. Open browser and type `http://localhost/bart-gallery/public` 
 
